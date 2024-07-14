@@ -1,33 +1,79 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
+/*   
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  font-family: var(--font-jetbrainsMono);
+  background-color: rgb(14, 14, 14);
+  color:white;
+} */
+
+@layer base {
+  body {
+    @apply font-primary bg-primary text-white leading-loose;
+     --swiper-navigation-color: #14b8a6;
+    background-image: url('/sun-tornadx.svg');
+    background-repeat: none;
+ background-attachment: fixed;
+    background-size: cover;
+
+  }
+
+  
+  .h1 {
+    @apply text-[48px] xl:text-[80px] leading-[1.1] font-semibold;
+  }
+  .h2 {
+    @apply text-[36px] xl:text-[48px] leading-[1.1] font-semibold;
+  }
+  .h3 {
+    @apply text-[20px] xl:text-[24px] leading-[1.1] font-semibold;
+  }
+
+  .iconStyles {
+    @apply w-14 h-14 border border-accent rounded-full flex justify-center items-center text-accent text-lg hover:bg-accent hover:text-primary hover:transition-all duration-500 hover:scale-[105%]
+  }
+
+  .glowStyles {
+    @apply border-[22px] rounded-full border-teal-900/90 scale-95 transition-all duration-500  text-white text-3xl w-[80px] h-[80px] blur-md
+  }
+
+  .containerStyles {
+    @apply flex gap-6
+  }
+  
+  .textHoverStyle {
+    @apply hover:text-accent transition-all duration-500 hover:text-2xl hover:underline hover:underline-offset-8  hover:decoration-white
+  }
+
+
+  .headerStyle {
+    @apply from-white via-teal-100 to-teal-400 bg-gradient-to-r bg-clip-text text-transparent text-4xl font-extralight my-4
+  }
+
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+
+.text-outline {
+  -webkit-text-stroke: 1px #ffffff;
 }
+
+.text-outline-hover {
+  -webkit-text-stroke: 1px #00e5ff;
+}
+
+
+  .autofill-text:-webkit-autofill {
+    -webkit-text-fill-color: white;
+  }
+
+  .text-input {
+    @apply autofill-text; /* set text colour (white) */
+    @apply autofill:shadow-[inset_0_0_0px_1000px_#27272c]; /* set 'background' colour (black)*/
+    @apply autofill:text-xl; /* set font size */
+
+  }
+
+
+  
