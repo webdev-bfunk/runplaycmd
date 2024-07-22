@@ -54,7 +54,7 @@ const Services = () => {
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 my-20 place-items-center">
                     {services.map((item, index) => (
                         <>
-                            <div className='p-8 bg-neutral-800/60 rounded-xl min-w-[500px]  border-2 border-neutral-900 hover:scale-105 cursor-pointer  hover:shadow-inner shadow-teal-400/20 shadow-2xl hover:shadow-teal-400/80 transition-all duration-500'>
+                            <div className='p-8 bg-neutral-800/60 rounded-xl min-w-[550px]  border-2 border-neutral-900 hover:scale-105 cursor-pointer  hover:shadow-inner shadow-teal-400/20 shadow-2xl hover:shadow-teal-400/80 transition-all duration-500'>
                                 <li className="list-none flex items-center justify-center " key={index}>
                                     <h2 className='text-4xl flex gap-4 mb-4'>{item.icon} {item.name}</h2>
                                 </li>
@@ -68,7 +68,7 @@ const Services = () => {
 
                                 <span className=' text-neutral-200 flex justify-between items-center mt-8'>
                                     <Link href="/" className='px-3 py-1 bg-neutral-700 rounded-lg border-2 border-neutral-900 hover:scale-105 hover:shadow-inner shadow-teal-400/20 shadow-2xl hover:shadow-teal-400/80 transition-all duration-500'>Learn More</Link>
-                                    <p className='text-6xl'>{item.price}</p></span>
+                                    <p className='text-6xl font-extralight'>{item.price}</p></span>
                             </div>
                         </>
                     ))}

@@ -105,7 +105,10 @@ const Showcase = () => {
                     ))}
                 </div>
                 <div className="w-full flex h-[100px] justify-end mt-10 ">
-                    <Link href="/" className='flex items-center justify-center gap-4 text-xl hover:text-accent'>View more <PiArrowCircleDownRightFill size={50} className='hover:glowStyles' /></Link></div>
+                    <Link href="/" className='flex items-center justify-center gap-4 text-xl hover:text-accent'>
+                        View more <PiArrowCircleDownRightFill size={50} className='hover:glowStyles' />
+                    </Link>
+                </div>
             </div>
         </motion.section>
     )
