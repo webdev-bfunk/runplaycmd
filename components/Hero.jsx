@@ -16,7 +16,7 @@ const Hero = () => {
                 <div className="w-full flex justify-center">
                     <Image src="/network.jpg" alt="" width={800} height={200} className='rounded-3xl z-10 relative shadow-2xl shadow-teal-300/20 opacity-80' />
                 </div>
-                <div className="h-[650px] w-[650px] bg-gradient-to-r from-teal-200 to-teal-500 blur-3xl  rounded-full opacity-10 absolute top-10 left-80" />
+                <div className="h-[650px] w-[650px] bg-gradient-to-r from-teal-200 to-teal-500 blur-3xl rounded-full opacity-10 absolute top-10 left-80" />
 
             </div>
         </motion.section>
